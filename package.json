@@ -1,0 +1,35 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "postcss-nested": {},
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 30 versions"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "gsap": "^2.1.2",
+    "jquery": "^3.4.0",
+    "sass": "^1.18.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "postcss-modules": "^1.4.1",
+    "postcss-nested": "^4.1.2"
+  }
+}
